@@ -1,0 +1,42 @@
+# general settings
+scattering_type: [IMP, ADP, POP]
+# IMP ADP POP PIE CRT MFP
+doping: [1e19,2e19,3e19,4e19,5e19,6e19,7e19,8e19,9e19,1e20,2e20,3e20,4e20,5e20,6e20,7e20,8e20,9e20,1e21,2e21,3e21,4e21,5e21,6e21,7e21,8e21,9e21,1e22]
+temperatures: [300]
+bandgap: 0.0156
+
+# electronic_structure settings
+interpolation_factor: 70
+
+# materials properties
+deformation_potential: deformation.h5
+elastic_constant:
+  - [105.6, 70.76, 69.59, 0.129,  -0.909,  -1.932]
+  - [70.80, 102.0, 66.69, 0.084,  -1.899,  -0.217]
+  - [69.60, 66.65, 108.9, 0.160,  -0.964,  -3.137]
+  - [0.103, 0.060, 0.127, 24.14,   0.275,   0.633]
+  - [-0.915, -1.922, -0.971, 0.382,  21.89,  0.053]
+  - [-2.070, -0.222, -3.021, 0.639,  0.063,  24.39]
+static_dielectric:
+  - [30.89, -3.31, 0.620]
+  - [-3.54, 47.94, -10.68]
+  - [0.73, -10.37, 64.05]
+high_frequency_dielectric:
+  - [18.74, -1.25, 1.69]
+  - [-1.48, 19.28, -2.06]
+  - [1.800, -1.75, 34.17]
+piezoelectric_constant:
+  - [0.000, 0.000, 0.000, 0.000, 0.000, 0.000]
+  - [0.000, 0.000, 0.000, 0.000, 0.000, 0.000]
+  - [0.000, 0.000, 0.000, 0.000, 0.000, 0.000]
+pop_frequency: 3.45
+# performance settings
+mobility_rates_only: true
+#mean-free-path: MFP (vg/L)
+#constant-relaxation-time: CRT
+#write_input: True
+write_mesh: True
+calculate_mobility: True
+#separate_mobility: True
+#file-format: txt
+
